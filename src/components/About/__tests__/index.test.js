@@ -13,12 +13,12 @@ afterEach(cleanup);
 // use the describe function to declare the component we're testing 
 describe('About component', () => {
     // renders About test
-    // first test - verifying that the component is rendering 
+    // first test - verifying that the component is rendering (baseline test)
     it('renders', () => {
         render(<About />)
     });
 
-    // second test - "test case" - compare snapshot versions of the DOM node structure
+    // second test - "test case" - compare snapshot versions of the DOM node structure (snapshot test)
     it('matches snapshot DOM node structure', () => {
         // render about 
         const { asFragment } = render(<About />);
