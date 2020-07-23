@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Nav from './components/Nav'
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
+import ContactForm from './components/Contact';
 
 function App() {
   // lifting from Nav
@@ -27,6 +27,7 @@ function App() {
       ></Nav>
       <main>
         <div>
+        <ContactForm></ContactForm>
         <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
         </div>
