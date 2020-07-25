@@ -1,7 +1,7 @@
 import React from 'react';
 // photo list is the parent 
 
-function Modal({currentPhoto}) {
+function Modal({ onClose, currentPhoto}) {
     // deconstruct 
     const { name, category, description, index } = currentPhoto; 
 
@@ -13,7 +13,7 @@ function Modal({currentPhoto}) {
                 <p>
                     {description}
                 </p>
-                <button type="button">
+                <button onClick={onClose} type="button">
                     Close this modal 
                 </button>
             </div>
